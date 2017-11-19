@@ -24,17 +24,17 @@ const styles = StyleSheet.create({
 });
 
 export default class AddPerson extends Component {
-    static navigationOptions = ({navigation}) => ({      
-            tabBarLabel: 'Companies',
-            tabBarIcon: ({tintColor}) => {
-                <Icon 
-                    name={'business'}
-                    size={45}
-                    style={{color: tintColor}}
-                 />
-            }
+    // static navigationOptions = ({navigation}) => ({      
+    //         tabBarLabel: 'Companies',
+    //         tabBarIcon: ({tintColor}) => {
+    //             <Icon 
+    //                 name={'business'}
+    //                 size={45}
+    //                 style={{color: tintColor}}
+    //              />
+    //         }
         
-    });
+    // });
 
     render(){
         return (

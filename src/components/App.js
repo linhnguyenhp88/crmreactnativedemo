@@ -14,7 +14,7 @@ import {Provider} from 'react-redux';
 import {createStore} from 'redux';
 import reducers from '../reducers/PeopleReducer';
 import Navigation from './Navigation';
- 
+
 const styles = StyleSheet.create({
   container: {
     flex: 1,
@@ -52,7 +52,7 @@ export default class App extends Component {
     renderInitialView(){
       switch(this.state.loggedIn){
         case true:
-            return <Navigation />      
+            return <PeopleList />      
         case false:
             return <Login />
         default: <Loader size="large" />
@@ -62,7 +62,7 @@ export default class App extends Component {
   render() {
     return (
       <Provider store={store}>
-      <View style={styles.container}>
+      <View >
          {this.renderInitialView()}
       </View>
       </Provider>
