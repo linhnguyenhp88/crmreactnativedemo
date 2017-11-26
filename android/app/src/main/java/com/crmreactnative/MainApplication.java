@@ -1,8 +1,7 @@
 package com.crmreactnative;
-
 import android.app.Application;
-
 import com.facebook.react.ReactApplication;
+import com.rnfs.RNFSPackage;
 import com.oblador.vectoricons.VectorIconsPackage;
 import com.github.xinthink.rnmk.ReactMaterialKitPackage;
 import com.reactnative.ivpusic.imagepicker.PickerPackage;
@@ -27,6 +26,7 @@ public class MainApplication extends Application implements ReactApplication {
     protected List<ReactPackage> getPackages() {
       return Arrays.<ReactPackage>asList(
           new MainReactPackage(),
+            new RNFSPackage(), 
             new VectorIconsPackage(),
             new ReactMaterialKitPackage(),
             new PickerPackage(),

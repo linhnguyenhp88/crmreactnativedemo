@@ -10,3 +10,4 @@ export const noneSelected = () => {
         type: 'NONE_SELECTED',
     };
 };
+
